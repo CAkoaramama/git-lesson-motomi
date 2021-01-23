@@ -6,23 +6,32 @@
     <title>This is the about page.</title>
 </head>
 <body>
+    <p>This is how I have made my terminal colorful</p>
     
     <h1>How to make Terminal colorful</h1>
+
+    <p>Mac OS Big Sur Version 11.1<br>
+        Terminal profile "iceberg"as a default
+    </p>
     <h2>First to install</h2>
     <p>
         git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
     </p>
-    <h3>Back up if needed</h3>
+    <h2>Back up if needed</h2>
   
     <p>mkdir zsh_backup
 
         mv .zlogin .zlogout .zprofile .zshenv .zshrc zsh_backup</p>
-    <h3>Initial setting</h3>
+    <h2>Initial setting</h2>
 
     <p>setopt EXTENDED_GLOB
         for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
          ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
         done</p>
+
+     <h2>Now terminal looks like this</h2>   
+
+     <img src="terminal-color.png" alt="">
 
         
     

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the about page.</title>
+</head>
+<body>
+    
+    <h1>How to make Terminal colorful</h1>
+    <h2>First to install</h2>
+    <p>
+        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+    </p>
+    <h3>Back up if needed</h3>
+  
+    <p>mkdir zsh_backup
+
+        mv .zlogin .zlogout .zprofile .zshenv .zshrc zsh_backup</p>
+    <h3>Initial setting</h3>
+
+    <p>setopt EXTENDED_GLOB
+        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+         ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+        done</p>
+
+        
+    
+</body>
+</html>
